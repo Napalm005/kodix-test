@@ -1,0 +1,101 @@
+@import '../../vars.scss';
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+    min-width: 300px;
+  }
+  &__content {
+    padding: 0 20px;
+    margin-top: -1em;
+  }
+  &__model-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: $c-acc;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+  }
+  &__features {
+    position: relative;
+    font-size: 14px;
+    color: $c-grey;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  &__features-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+  }
+  &__features-list-item {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $c-grey;
+    }
+  }
+  &__features-more {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: $c-acc;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  &__footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid $c-grey-light;
+  }
+  &__footer-icon {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    fill: $c-grey;
+  }
+  &__address {
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    color: $c-acc;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &:hover {
+      color: $c-grey;
+    }
+  }
+}
